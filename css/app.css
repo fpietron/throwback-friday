@@ -1,0 +1,42 @@
+html {
+  overflow-y: hidden;
+}
+
+.canvasgame-main-content {
+  flex: 0.8;
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+@media only screen and (min-width: 640px) {
+  .canvasgame-main-content {
+    flex: calc(2 / 3);
+  }
+}
+.canvasgame-main-content > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 16px;
+  box-sizing: content-box;
+}
+.canvasgame-main-content > div:last-child > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.canvasgame-main-content > div:last-child > div span {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0;
+}
+.canvasgame-main-content > div:last-child > div canvas {
+  min-width: 90%;
+  background-color: white;
+  box-shadow: 0 2px #e9e9e9;
+}
+
+/*# sourceMappingURL=app.css.map */
